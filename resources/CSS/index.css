@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI';
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #659DBD;
+    height: 80px;
+    width: 100%;
+    
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.nav-link, a:hover {
+    background: #59B1E3;
+    transition: .5s;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #DAAD86
+}
+
+#welcome-header {
+    font-size:  50px;
+    font-weight: bold;
+    color: #659DBD
+}
+
+#projects {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "project1 project2"
+    "project3 project4";
+     grid-row-gap: 80px;
+     grid-column-gap: 150px;
+     justify-content: center
+     
+}
+
+.projects-header {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.project-1 {
+    width: 500px;
+    height: 350px;
+    grid-area: project1;
+}
+
+.project-2 {
+    width: 500px;
+    height: 350px;
+    grid-area: project2;
+}
+
+.project-3 {
+    width: 500px;
+    height: 350px;
+    grid-area: project3;
+}
+
+.project-4 {
+    width: 500px;
+    height: 350px;
+    grid-area: project4;
+}
+
+.img-project1 {
+    width: 500px;
+    height: 300px;
+}
+
+.project-tile{
+    background: #BC986A;
+    color: #FBEEC1;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+}
+
+#white {
+    height: 20vh;
+}
+
+#contact-header {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    font-size:  50px;
+    font-weight: bold;
+}
+
+#contact {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background: #FBEEC1;
+    color: #BC986A;
+}
+
+#profile-link {
+    color: gray;
+}
